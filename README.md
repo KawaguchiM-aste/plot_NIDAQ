@@ -1,6 +1,6 @@
 # NIDAQmx + matplotlib + pandas
 
-National Instrument社製DAQデバイスで計測するアナログ信号の波形表示，および記録した信号のExcelファイルへのエクスポート
+National Instrument社製DAQデバイスで計測するアナログ信号の波形表示，および記録した信号のExcelファイルへのエクスポート．
 [NI USB-6008](https://www.ni.com/ja-jp/support/model.usb-6008.html) および [NI USB-6210](https://www.ni.com/ja-jp/support/model.usb-6210.html) で動作確認済．
 
 # Requirement
@@ -34,4 +34,4 @@ python ADmonirecNI.py 2 1000 5.0
 
 # Bugs
 
-Fsが小さい時(≧100)に，QやRを押しても終了しないことがある．
+Fsが小さい時(≦100)に，QやRを押しても終了しないことがある．
