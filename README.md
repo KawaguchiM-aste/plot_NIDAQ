@@ -11,14 +11,16 @@ National Instrument社製DAQデバイスで計測するアナログ信号の波�
 * Pandas
 
 # Usage
+## 準備
+PCとDAQデバイスを接続後，NIデバイスモニタを確認して「Dev*」の表記を確認する．それをもとに12行目DevIDを修正しておいてください．
 
 ## 実行
 
 ```bash
-python ADmonirecBitalino.py <N_Channels> <Fs> <Trec>
+python ADmonirecBitalino.py <Nchan> <Fs> <Trec>
 ```
 ここで
-* N_Channels: AD変換に用いるチャンネルの数．DAQデバイスのAI0から使用する．
+* Nchan: AD変換に用いるチャンネルの数．DAQデバイスのAI0から使用する．
 * Fs: サンプリング周波数 (≦1000) [Hz] 
 * Trec: Rキーの押下時刻を開始時刻としたデータの収録時間[s]
 
