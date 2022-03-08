@@ -6,8 +6,8 @@ import datetime
 import nidaqmx
 from nidaqmx.constants import AcquisitionType, Edge, TerminalConfiguration
 
-# usage: python ADmoniNI.py <Nchan> <Fs> <Tdur>
-# e.g. : python ADmoniNI.py 4 1000 5.0
+# usage: python ADmonirecNI.py <Nchan> <Fs> <Tdur>
+# e.g. : python ADmonirecNI.py 4 1000 5.0
 
 DevID='Dev1'
 AImode=TerminalConfiguration.DIFFERENTIAL
